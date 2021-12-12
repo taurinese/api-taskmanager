@@ -26,7 +26,7 @@ class AuthController extends Controller
 
         $user->tokens()->where('tokenable_id', $user->id)->delete();
 
-        $token = $user->createToken($request->email)->plainTextToken;
+        $token = $user->createToken('api')->plainTextToken;
 
         return response()->json([
             'token' => $token,

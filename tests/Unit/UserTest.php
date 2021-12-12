@@ -10,7 +10,7 @@ class UserTest extends TestCase
     public function test_register()
     {
         $data = [
-            'email' => 'test1@test.com',
+            'email' => 'test3@test.com',
             'password' => 'test',
             'name' => 'Test'
         ];
@@ -23,7 +23,7 @@ class UserTest extends TestCase
     public function test_login()
     {
         $data = [
-            'email' => 'test@test.com',
+            'email' => 'test2@test.com',
             'password' => 'test'
         ];
 
